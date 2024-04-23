@@ -1,9 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    color: #fff;
+    background-image: url(images/background-with-a-pasta-decoration.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto Slab", serif;
 }
 
 /* Header */
+
 .nav-bar {
     background: linear-gradient(#5c0505, #e84343);
     display: flex;
@@ -11,7 +17,20 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 5px 30px;
+    font-size: 17px;
+}
+
+.nav-bar h1 {
+    font-size: 48px;
+    border-bottom: solid 3px #fff;
+    line-height: 41px;
+    margin-bottom: 0;
+}
+
+.nav-bar p {
+    margin: 5px 0 15px 0;
+
 }
 
 .nav-links { 
@@ -29,5 +48,57 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #000000;
+    border: inset 2px #5c0505;
+    border-radius: 30px;
+    padding: 6px;
+    background: linear-gradient(#5c0505, #e84343);
+    color: #fff;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(#e84343, #5c0505);
+}
+
+/* Description Container */
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 200px;
+
+}
+
+.description {
+    max-width: 650px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #5c0505;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 8px 5px;
+    font-size: 15px;
+    border: inset 3px #5c0505;
+}
+
+.information-container {
+    margin: 100px 0;
+    text-align: center;
+    background-color: #5c0505;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 18px;
+    border: inset 3px #5c0505;
+}
+
+.information-container h2 {
+    font-size: 41px;
+}
+
+.information-container img {
+    border-radius: 50%;
 }
