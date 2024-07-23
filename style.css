@@ -214,6 +214,7 @@ body {
 
     .description {
         max-width: 300px;
+        text-align: left;
     }
 
     .information-container {

@@ -1,6 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
   background-color: #ececec;
 }
 
@@ -20,11 +25,6 @@ body {
   font-size: 20px;
 }
 
-.menu-header h1 {
-  margin: 0;
-  padding: 0;
-}
-
 .menu-header h3 {
   font-size: 1.5em;
   margin: 20px 0;
@@ -42,4 +42,40 @@ body {
 
 .back-button:hover {
   background: linear-gradient(#e84343, #5c0505);
+}
+
+/* Menu  container */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15px;
+}
+
+.food-plate {
+  background-color: #ececec;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+
+}
+
+.platos-iconicos {
+  grid-template-columns: repeat(2, 1fr);
 }
