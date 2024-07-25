@@ -17,7 +17,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  box-sizing: border-box;
   padding: 25px;
   text-align: center;
   background: linear-gradient(#5c0505, #e84343);
@@ -25,9 +24,14 @@ body {
   font-size: 20px;
 }
 
+.menu-header h1 {
+  letter-spacing: 5px;
+}
+
 .menu-header h3 {
   font-size: 1.5em;
   margin: 20px 0;
+  letter-spacing: 5px;
 }
 
 .back-button {
@@ -52,14 +56,21 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 10px;
+  margin: 75px 0 0 0;
+  font-size: 20px;
+}
+
+.food-title {
+  margin: 0 0 25px 0;
+  color: #bd2d2d;
+  font-size: 1.5em;
 }
 
 .menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 15px;
+  margin: 0 0 60px 0;
 }
 
 .food-plate {
@@ -69,13 +80,46 @@ body {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 400px;
   height: 500px;
+}
 
+.food-plate img {
+  min-height: 230px;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+}
+
+.food-plate h3 {
+ color: #bd2d2d;
+ font-size: 1em;
+ margin: 0 0 25px 0;
+}
+
+.food-plate p {
+  font-size: .8em;
 }
 
 .platos-iconicos {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.precio {
+  padding: 0 10px 5px 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1em;;
+  color: #fff;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.precio h4 {
+  padding: 5px;
+  border: solid 2px #fac003;
+  border-radius: 8px;
+  background-color: #bd2d2d;
 }
