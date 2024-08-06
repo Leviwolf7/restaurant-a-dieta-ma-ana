@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--JavaScript-->
+    <script src="script.js" defer></script>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +19,26 @@
     <title>A Dieta Mañana</title>
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <div class="nav-bar">
-            <div>
-                <h1>A Dieta Mañana</h1>
-                <p>&mdash; Hoy comemos, ¡mañana nos preocupamos! &mdash;</p>
-            </div>
 
-            <ul class="nav-links">
-                <li><a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Location</a></li>
-                <li><a href="links/menu.html">Menu</a></li>
-            </ul>
-        </div>
+    <!--Header-->
+
+    <header>
+
+        <ul>
+            <li><a class="title">A Dieta Mañana</a></li>
+            <li class="hideOnMobile"><a href="#">Location</a></li>
+            <li class="hideOnMobile"><a href="#">Menu</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+        <!--sidebar-->
+
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+
     </header>
 
     <!--Description Container-->

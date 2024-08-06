@@ -55,7 +55,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   margin: 75px 0 0 0;
   font-size: 20px;
 }
@@ -124,4 +123,50 @@ body {
   border: solid 2px #fac003;
   border-radius: 8px;
   background-color: #bd2d2d;
+}
+
+/* Responsive */
+
+/* Menu container */
+
+@media screen and (max-width: 1330px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu-header {
+    font-size: 18px;
+  }
+
+  .menu-container {
+    font-size: 18px;
+  }
+
+  .food-plate {
+    width: 320px;
+    height: 420px;
+  }
+
+  .food-plate img {
+    min-height: 130px;
+    min-width: 230px;
+  }
+
+  .precio {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .menu-header {
+    font-size: 16px;
+  }
 }
